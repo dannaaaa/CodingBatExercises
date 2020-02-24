@@ -7,7 +7,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 /**
- * Unit test for simple App.
+ * Unit test for simple App. xss aj
  */
 public class ExercisesTest
 {
@@ -74,5 +74,14 @@ public class ExercisesTest
     public void shouldGetArrayFront9(){
         ArrayFront9 arrayFront9 = new ArrayFront9();
         Assert.assertEquals(true, arrayFront9.arrayFront9(new int[]{1,9,3,9}));
+    }
+
+    @Test
+    public void shouldMakeBricks (){
+        makeBricks makeBricks = new makeBricks();
+        Assert.assertEquals(true,makeBricks.makeBricks(3, 1, 8) );
+        Assert.assertEquals(false,makeBricks.makeBricks(3, 1, 9) );
+        Assert.assertEquals(true,makeBricks.makeBricks(3, 3, 18) );
+
     }
 }
