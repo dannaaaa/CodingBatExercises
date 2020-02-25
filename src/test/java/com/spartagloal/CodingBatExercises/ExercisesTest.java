@@ -67,7 +67,7 @@ public class ExercisesTest
     @Test
     public void shouldGetArrayCount9 (){
         ArrayCount9 arrayCount9 = new ArrayCount9();
-        Assert.assertEquals(2, arrayCount9.arrayCount9(new int[]{2, 9, 4, 99, 23, 9, 1999, 8, 9}));
+        Assert.assertEquals(3, arrayCount9.arrayCount9(new int[]{2, 9, 4, 99, 23, 9, 1999, 8, 9}));
     }
 
     @Test
